@@ -67,17 +67,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="CustomerService.aspx" />
+    <Content Include="Vet.aspx" />
     <Content Include="indexPage.aspx" />
+    <Content Include="Dispensing.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="CustomerService.aspx.cs">
+      <DependentUpon>CustomerService.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="CustomerService.aspx.designer.cs">
+      <DependentUpon>CustomerService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vet.aspx.cs">
+      <DependentUpon>Vet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vet.aspx.designer.cs">
+      <DependentUpon>Vet.aspx</DependentUpon>
     </Compile>
     <Compile Include="indexPage.aspx.cs">
       <DependentUpon>indexPage.aspx</DependentUpon>
@@ -92,6 +101,13 @@
     </Compile>
     <Compile Include="MainPage.Master.designer.cs">
       <DependentUpon>MainPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dispensing.aspx.cs">
+      <DependentUpon>Dispensing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dispensing.aspx.designer.cs">
+      <DependentUpon>Dispensing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

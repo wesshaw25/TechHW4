@@ -5,13 +5,45 @@
 <html>
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #nav{
+            background-color:lightcoral;
+        }
+        h1{
+            text-align:center;
+        }
+        #inventory{
+            background-color:lightcoral;
+            border:solid;
+            border-width:thin;
+
+        }
+        body{
+            background-color:bisque;
+        }
+    </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+        <nav id="nav" class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Ped Med System</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="Vet.aspx">Vets Place Order Here</a></li>
+              <li><a href="Dispensing.aspx">Dispensing Department</a></li>
+              <li><a href="CustomerService.aspx">Customer Service</a></li>
+            </ul>
+          </div>
+        </nav>
         <div>
-            <h1>Master Page</h1>
+            <h1>Welcome to Pet Med System</h1>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
